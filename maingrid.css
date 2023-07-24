@@ -10,7 +10,7 @@ body{
 }
 
 .sidebarOption{
-    display:flex;
+    display:flex ;
     align-items:center;
     cursor:pointer;
     margin:12px;
@@ -25,6 +25,9 @@ body{
     font-weight:800;
     font-size:20px;
     margin-right:20px;
+    margin-bottom:9px;
+    margin-left:23px;
+    font-size:15px;
 }
 
 .sidebarOption:hover {
@@ -40,10 +43,11 @@ body{
 
 }
 
-.material-icons
+.material-symbols-outlined
 {
     margin-bottom:12px;
     display: flex;
+    margin-left:36px;
 }
 
 .sidebarOption{
@@ -53,5 +57,31 @@ body{
 .text-box
 {
     display: flex;
+}
+
+.sidebar_tweet
+{
+    width:100%;
+    background-color:var(--twitter-color);
+    border:none;
+    color:white;
+    font-weight:900;
+    border-radius:30px;
+    height:50px;
+    margin-top:20px;
+}
+
+body{
+    display:flex;
+    height:100vh;
+    max-width:1300px;
+    margin-left:auto;
+    margin-right:auto;
+    padding: 0 10px;
+}
+
+.twitter-icon{
+    display:flex;
+    margin-left:30px;
 }
  
