@@ -1,0 +1,157 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    --twitter-color:#50b7f5;
+    --twitter-background:#e6ecfo;
+}
+
+.sidebarOption{
+    display:flex ;
+    align-items:center;
+    cursor:pointer;
+    margin:12px;
+}
+
+.sidebar
+{
+    margin:none;
+    border-right:0.4px solid;
+    border-color: lightgray;
+    flex:0.2;
+    min-width:250px;
+    margin-top:20px;
+    padding-left:16px;
+    padding-right:20px;
+}
+
+.sidebaroption .material-icons,
+.fa-twitter{
+    padding:20px;
+}
+
+.fa-twitter{
+    color:var(--twitter-color);
+    font-size:30px;
+}
+
+.sidebarOption h2 {
+    font-weight:800;
+    font-size:20px;
+    margin-right:20px;
+    margin-bottom:9px;
+    margin-left:23px;
+    font-size:15px;
+}
+
+.sidebarOption:hover {
+    background-color: var(--twitter-background);
+    border-radius: 30px;
+    color:var(--twitter-color);
+    transition:color 100ms ease-out;
+}
+
+.sidebarOption:active
+{
+    color: var(--twitter-color);
+
+}
+
+.material-symbols-outlined
+{
+    margin-bottom:12px;
+    display: flex;
+    margin-left:36px;
+}
+
+.sidebarOption{
+    margin-bottom:22px;
+}
+
+.text-box
+{
+    display: flex;
+}
+
+.sidebar_tweet
+{
+    width:80%;
+    background-color:var(--twitter-color);
+    border:none;
+    color:white;
+    font-weight:900;
+    border-radius:30px;
+    height:50px;
+    margin-top:20px;
+}
+
+body{
+    display:flex;
+    height:100vh;
+    max-width:1300px;
+    margin-left:auto;
+    margin-right:auto;
+    padding: 0 10px;
+}
+
+.twitter-icon{
+    display:flex;
+    margin-left:30px;
+}
+
+/* feed */
+
+.feed
+{
+    flex:0.5;
+    border-right:1px solid var(--twitter-background);
+    min-width: fit-content;
+    overflow-y: scroll;
+    -ms-overflow-style:none;
+    scrollbar-width:none;
+}
+
+.feed-header
+{
+    position: sticky;
+    top:0;
+    background-color:white;
+    z-index:100;
+    border: 1px solid var(--twitter-background);
+    padding:15px 20px;
+}
+
+.feed-header h2
+{
+    font-size:20px;
+    font-weight:800;
+}
+
+.feed::-webkit-scrollbar
+{
+    display:none;
+}
+
+/* tweet box */
+
+.tweet-box-input
+{
+    border-radius:50%;
+    height:40px;
+}
+
+.user-img1
+{
+    border-radius:50%;
+    height:40px;
+}
+
+.tweet-box
+{
+    padding-bottom:10px;
+    border-bottom:8px solid var(--twitter-background);
+    padding-right:10px;
+}

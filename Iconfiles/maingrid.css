@@ -1,0 +1,64 @@
+.main-grid
+{
+    display: grid;
+}
+
+.header
+{
+    display:flex;
+    flex-direction: row;
+}
+
+.twitter-button
+{
+    display: grid;
+    padding-top:4px;
+    padding-bottom:4px;
+    padding-left:4px;
+    padding-right:4px;
+    border-width:0.01px;
+    border-radius:20px;
+    position: relative;
+    left:109px;
+    transition: 0.5s;
+}
+
+.twitter-button:hover
+{
+    height:31px;
+    width:31px;
+    border:none;
+    border-radius: 20px;
+    background-color: rgb(220, 220, 220);
+}
+
+.twitter-icon
+{
+    width: 30px; 
+}
+
+.home-text
+{
+    position:relative;
+    left:151px;
+    top:6px;
+    font-size:21px;
+    font-family:sans-serif;
+    font-weight:bold;
+}
+
+.search-bar-section
+{
+    position:relative;
+    left:730px;
+    width: 450px;
+    margin-top:0;
+}
+
+.search-bar
+{
+    width: 350px;
+    height: 44px;
+    padding-left:45px;
+}
+ 
