@@ -23,7 +23,6 @@ body{
     border-color: lightgray;
     flex:0.2;
     min-width:250px;
-    margin-top:20px;
     padding-left:16px;
     padding-right:20px;
 }
@@ -141,6 +140,7 @@ body{
 {
     border-radius:50%;
     height:40px;
+    position: relative;
 }
 
 .user-img1
@@ -154,4 +154,30 @@ body{
     padding-bottom:10px;
     border-bottom:8px solid var(--twitter-background);
     padding-right:10px;
+}
+
+.add-feed
+{
+    
+}
+
+.tweet-feed-options
+{
+    padding:10px;
+    border-top: 0.2px solid rgb(179, 179, 179);
+}
+
+.add-feed
+{
+    width: 50%;
+    padding: 10px;   
+}
+
+.add-feed::placeholder {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  /* Additional styling */
+  color: #999;
 }
