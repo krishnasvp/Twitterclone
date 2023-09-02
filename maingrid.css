@@ -19,10 +19,10 @@ body{
 .sidebar
 {
     margin:none;
-    border-right:0.4px solid;
-    border-color: lightgray;
+    border-right:1px solid var(--twitter-background);
     flex:0.2;
     min-width:250px;
+    margin-top:20px;
     padding-left:16px;
     padding-right:20px;
 }
@@ -35,6 +35,24 @@ body{
 .fa-twitter{
     color:var(--twitter-color);
     font-size:30px;
+}
+
+.feed
+{
+    flex:0.5;
+    border-right:1px solid var(--twitter-background);
+    min-width: fit-content;
+    overflow-y: scroll;
+}
+
+.feed-header
+{
+    position: sticky;
+    top:0;
+    background-color: white;
+    z-index:100;
+    border:1px solid var(--twitter-background);
+    padding:15px 20
 }
 
 .sidebarOption h2 {
@@ -77,7 +95,7 @@ body{
 
 .sidebar_tweet
 {
-    width:80%;
+    width:100%;
     background-color:var(--twitter-color);
     border:none;
     color:white;
@@ -101,82 +119,4 @@ body{
     margin-left:30px;
 }
 
-/* feed */
-
-.feed
-{
-    flex:0.5;
-    border-right:1px solid var(--twitter-background);
-    min-width: fit-content;
-    overflow-y: scroll;
-    -ms-overflow-style:none;
-    scrollbar-width:none;
-}
-
-.feed-header
-{
-    position: sticky;
-    top:0;
-    background-color:white;
-    z-index:100;
-    border: 1px solid var(--twitter-background);
-    padding:15px 20px;
-}
-
-.feed-header h2
-{
-    font-size:20px;
-    font-weight:800;
-}
-
-.feed::-webkit-scrollbar
-{
-    display:none;
-}
-
-/* tweet box */
-
-.tweet-box-input
-{
-    border-radius:50%;
-    height:40px;
-    position: relative;
-}
-
-.user-img1
-{
-    border-radius:50%;
-    height:40px;
-}
-
-.tweet-box
-{
-    padding-bottom:10px;
-    border-bottom:8px solid var(--twitter-background);
-    padding-right:10px;
-}
-
-.add-feed
-{
-    
-}
-
-.tweet-feed-options
-{
-    padding:10px;
-    border-top: 0.2px solid rgb(179, 179, 179);
-}
-
-.add-feed
-{
-    width: 50%;
-    padding: 10px;   
-}
-
-.add-feed::placeholder {
-  position: absolute;
-  top: 50%;
-  left: 10px;
-  transform: translateY(-50%);
-  color: #999;
-}
+ 
